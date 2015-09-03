@@ -113,9 +113,12 @@ class HUINavigationBar: UIView {
     }
     
     func endAnimation(){
-        animationIndicator.stopAnimating()
-        animationIndicator.removeFromSuperview()
-        animationIndicator = nil
+        
+        if animationIndicator != nil {
+            animationIndicator.stopAnimating()
+            animationIndicator.removeFromSuperview()
+            animationIndicator = nil
+        }
     }
     
     func setTitle(title: String){

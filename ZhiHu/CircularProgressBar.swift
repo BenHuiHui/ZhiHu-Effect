@@ -16,7 +16,8 @@ let π:CGFloat = CGFloat(M_PI)
     @IBInspectable var outlineColor: UIColor = UIColor.lightGrayColor()
     @IBInspectable var counterColor: UIColor = UIColor.whiteColor()
     
-    var circleLayer: CircleLayer!
+    //var circleLayer: CircleLayer!
+    var prg: Float = 0
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -26,17 +27,15 @@ let π:CGFloat = CGFloat(M_PI)
         super.init(frame: frame)
         backgroundColor = UIColor.clearColor()
         
-        circleLayer = CircleLayer(frame: frame)
-        circleLayer.backgroundColor = UIColor.clearColor().CGColor
-        layer.addSublayer(circleLayer)
+        //circleLayer = CircleLayer(frame: frame)
+        //circleLayer.backgroundColor = UIColor.clearColor().CGColor
+        //layer.addSublayer(circleLayer)
     }
     
     override func drawRect(rect: CGRect) {
         
         let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
-        
         let radius: CGFloat = max(bounds.width, bounds.height)
-        
         let arcWidth: CGFloat = 2
         
         let startAngle: CGFloat = 0
@@ -47,11 +46,19 @@ let π:CGFloat = CGFloat(M_PI)
         path.lineWidth = arcWidth
         outlineColor.setStroke()
         path.stroke()
+        
+        let end: CGFloat = 2 * π * CGFloat(prg)
+        var spath = UIBezierPath(arcCenter: center, radius: radius/2 - arcWidth/2, startAngle: startAngle, endAngle: end, clockwise: true)
+        
+        spath.lineWidth = arcWidth
+        counterColor.setStroke()
+        spath.stroke()
     }
 
     func setProgress(progress: Float){
-        //circleLayer.animateStrokeWithColor(progress)
-        
-        
+        prg = progress
+        setNeedsDisplay()
     }
+    
+
 }
