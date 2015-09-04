@@ -12,20 +12,24 @@
 	<dict>
 		<key>2A7F3F43EAA77604BE04FE87B6E97C0CC67D9A35</key>
 		<string>https://github.com/BenHuiHui/Twitch_Reactive.git</string>
+		<key>D51646255E3AFC9B01C146E864C68D958A506A42</key>
+		<string>https://github.com/BenHuiHui/ZhiHu-Effect.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ZhiHu/ZhiHu.xcodeproj/project.xcworkspace</string>
+	<string>ZhiHu.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2A7F3F43EAA77604BE04FE87B6E97C0CC67D9A35</key>
 		<string>../../..</string>
+		<key>D51646255E3AFC9B01C146E864C68D958A506A42</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/BenHuiHui/Twitch_Reactive.git</string>
+	<string>https://github.com/BenHuiHui/ZhiHu-Effect.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2A7F3F43EAA77604BE04FE87B6E97C0CC67D9A35</string>
+	<string>D51646255E3AFC9B01C146E864C68D958A506A42</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>2A7F3F43EAA77604BE04FE87B6E97C0CC67D9A35</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iOS</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D51646255E3AFC9B01C146E864C68D958A506A42</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZhiHu</string>
 		</dict>
 	</array>
 </dict>
